@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Pricing Section</title>
+
+    <link rel="stylesheet"
+    href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+
+</head>
+
+<body>
+
+    <div class="container py-5">
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+
+                <div class="card p-4 text-center">
+
+                    <h3>Basic</h3>
+
+                    <h4>$10</h4>
+
+                    <button class="btn btn-primary mt-3">
+                        Buy
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="card p-4 text-center">
+
+                    <h3>Standard</h3>
+
+                    <h4>$20</h4>
+
+                    <button class="btn btn-success mt-3">
+                        Buy
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

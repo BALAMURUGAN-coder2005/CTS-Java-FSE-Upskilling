@@ -1,0 +1,11 @@
+Used classes:
+
+.container → responsive container
+.row → row for grid system
+.col-* → responsive columns
+
+Responsive behavior:
+
+Mobile → stacked vertically
+Tablet → 2 columns per row
+Desktop → 3 columns per row

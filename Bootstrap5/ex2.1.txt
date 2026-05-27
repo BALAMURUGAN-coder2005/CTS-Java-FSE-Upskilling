@@ -1,0 +1,52 @@
+Exercise 2.1
+
+Bootstrap Folder Structure
+
+bootstrap-5.3.8-dist
+     css
+     js
+
+CSS Folder
+
+Contains Bootstrap styling files.
+
+Examples:
+
+bootstrap.css
+bootstrap.min.css
+
+Purpose:
+
+colors
+layout
+buttons
+responsive design
+JS Folder
+
+Contains JavaScript plugin files.
+
+Examples:
+
+bootstrap.bundle.min.js
+bootstrap.min.js
+
+Purpose:
+
+modal
+dropdown
+carousel
+alerts
+navbar toggle
+Icons Folder
+
+Contains Bootstrap icons.
+
+Examples:
+
+house icon
+search icon
+user icon
+
+Purpose:
+
+add icons to webpage
