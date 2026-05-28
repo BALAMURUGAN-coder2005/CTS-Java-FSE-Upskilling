@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<title>Geolocation</title>
+
+</head>
+
+<body>
+
+<h2>Find Nearby Events</h2>
+
+<button onclick="findlocation()">
+Find Nearby Events
+</button>
+
+<p id="location"></p>
+
+<script>
+
+function findlocation(){
+
+navigator.geolocation.getCurrentPosition(
+success,
+error,
+{
+enableHighAccuracy:true,
+timeout:5000
+}
+);
+
+}
+
+function success(position){
+
+document.getElementById("location").innerHTML=
+"Latitude : "+position.coords.latitude+
+"<br>Longitude : "+position.coords.longitude;
+
+}
+
+function error(err){
+
+if(err.code==1){
+alert("Permission Denied");
+}
+else{
+alert("Location Error");
+}
+
+}
+
+</script>
+
+</body>
+</html>

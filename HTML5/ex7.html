@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<title>Promo Video</title>
+
+</head>
+
+<body onbeforeunload="return warningmsg()">
+
+<h2>Event Promo Video</h2>
+
+<video width="400" controls oncanplay="videoready()">
+
+<source src="sample.mp4" type="video/mp4">
+
+</video>
+
+<p id="msg"></p>
+
+<script>
+
+function videoready(){
+
+document.getElementById("msg").innerHTML=
+"Video ready to play";
+
+}
+
+function warningmsg(){
+
+return "Form is not completed";
+
+}
+
+</script>
+
+</body>
+</html>
