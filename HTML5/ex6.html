@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<title>Event Feedback</title>
+
+<style>
+
+body{
+font-family:Arial;
+padding:20px;
+}
+
+img{
+width:200px;
+border-radius:10px;
+cursor:pointer;
+}
+
+textarea{
+width:300px;
+height:100px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h2>Event Feedback Form</h2>
+
+<label>Phone Number</label><br>
+
+<input type="text"
+id="phone"
+onblur="validatephone()">
+
+<p id="phoneMsg"></p>
+
+<label>Select Event</label><br>
+
+<select onchange="showfee(this.value)">
+
+<option value="">Choose</option>
+
+<option value="100">Music Event</option>
+
+<option value="200">Sports Event</option>
+
+</select>
+
+<p id="fee"></p>
+
+<button onclick="submitform()">
+Submit
+</button>
+
+<h3>Double Click Image</h3>
+
+<img src="https://picsum.photos/200"
+ondblclick="enlarge(this)">
+
+<h3>Feedback</h3>
+
+<textarea onkeyup="countchars()"
+id="feedback"></textarea>
+
+<p>
+Characters :
+<span id="count">0</span>
+</p>
+
+<script>
+
+function validatephone(){
+
+let phone=document.getElementById("phone").value;
+
+if(phone.length!=10){
+document.getElementById("phoneMsg").innerHTML=
+"Invalid Phone Number";
+}
+else{
+document.getElementById("phoneMsg").innerHTML=
+"Valid Phone Number";
+}
+
+}
+
+function showfee(value){
+
+document.getElementById("fee").innerHTML=
+"Event Fee : ₹"+value;
+
+}
+
+function submitform(){
+
+alert("Feedback Submitted");
+
+}
+
+function enlarge(img){
+
+img.style.width="400px";
+
+}
+
+function countchars(){
+
+let text=document.getElementById("feedback").value;
+
+document.getElementById("count").innerHTML=
+text.length;
+
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+*{
+margin:0;
+padding:0;
+}
+
+h2{
+color:blue;
+}
+
+#mainHeader{
+background-color:lightblue;
+padding:20px;
+}
+
+.eventCard{
+border:2px solid gray;
+padding:20px;
+margin:20px;
+}
+
+h3,p{
+font-family:Arial;
+}
